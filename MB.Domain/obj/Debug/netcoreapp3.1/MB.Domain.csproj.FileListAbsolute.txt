@@ -1,0 +1,9 @@
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\MB.Domain.deps.json
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\MB.Domain.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\MB.Domain.pdb
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.csprojAssemblyReference.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.AssemblyInfoInputs.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.AssemblyInfo.cs
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.pdb
