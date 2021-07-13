@@ -17,12 +17,8 @@ namespace MB.Domain.ArticleCategoryAgg
             CreationDate = DateTime.Now;
             Articles = new List<Article>();
         }
-        public ArticleCategory(string name)
+        protected ArticleCategory()
         {
-
-            Name = name;
-            IsDeleted = false;
-            CreationDate = DateTime.Now;
         }
 
         public void Rename(string name,IArticleCategoryValidatorService validatorService)
