@@ -19,5 +19,12 @@ namespace MB.Application.Article
         {
             return _articleRepository.GetList();
         }
+
+        public void Create(CreateArticle command)
+        {
+            var article = new Domain.ArticleAgg.Article(command.Title, command.ShortDescription, command.Content,
+                command.Image, command.ArticleCategoryId);
+            _articleRepository.CreateAndSave(article);
+        }
     }
 }

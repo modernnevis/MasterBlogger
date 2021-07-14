@@ -86,3 +86,4 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\ob
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\_ViewImports.cshtml.g.cs
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\_ViewStart.cshtml.g.cs
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\ArticleManagement\List.cshtml.g.cs
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\ArticleManagement\Create.cshtml.g.cs
