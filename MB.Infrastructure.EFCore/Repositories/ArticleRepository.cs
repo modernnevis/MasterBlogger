@@ -39,6 +39,11 @@ namespace MB.Infrastructure.EFCore.Repositories
             SaveChanges();
         }
 
+        public Article Get(long id)
+        {
+            return _context.Articles.FirstOrDefault(x => x.Id == id);
+        }
+
         public void SaveChanges()
         {
             _context.SaveChanges();
