@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MB.Application.Contracts.Comment
 {
-    class ICommentApplication
+    public interface ICommentApplication
     {
     }
 }
