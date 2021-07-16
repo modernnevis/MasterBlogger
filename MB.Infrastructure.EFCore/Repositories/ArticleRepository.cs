@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
 using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
-using MB.Domain.ArticleCategoryAgg;
 using Microsoft.EntityFrameworkCore;
 
 namespace MB.Infrastructure.EFCore.Repositories
@@ -48,5 +44,11 @@ namespace MB.Infrastructure.EFCore.Repositories
         {
             _context.SaveChanges();
         }
+
+        public bool Exist(string title)
+        {
+            return _context.Articles.Any(x => x.Title == title);
+        }
     }
 }
+

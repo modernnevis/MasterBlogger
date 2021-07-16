@@ -1,4 +1,5 @@
 ﻿using System;
+using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryAgg;
 
 namespace MB.Domain.ArticleAgg
@@ -18,8 +19,12 @@ namespace MB.Domain.ArticleAgg
         protected Article()
         {
         }
-        public Article(string title, string shortDescription, string content, string image, long articleCategoryId)
+        public Article(string title, string shortDescription, string content, string image, long articleCategoryId , IArticleValidatorService validatorService)
         {
+            Validator(title, articleCategoryId);
+
+            validatorService.CheckThisRecordAlreadyExist(title);
+
             Title = title;
             ShortDescription = shortDescription;
             Content = content;
@@ -29,8 +34,20 @@ namespace MB.Domain.ArticleAgg
             CreationDate= DateTime.Now;
         }
 
-        public void Edit(string title, string shortDescription, string content, string image, long articleCategoryId)
+        private static void Validator(string title, long articleCategoryId)
         {
+            if (string.IsNullOrWhiteSpace(title))
+                throw new ArgumentNullException();
+
+            if (articleCategoryId == 0)
+                throw new ArgumentOutOfRangeException();
+        }
+
+        public void Edit(string title, string shortDescription, string content, string image, long articleCategoryId , IArticleValidatorService validatorService)
+        {
+            Validator(title, articleCategoryId);
+         //   validatorService.CheckThisRecordAlreadyExist(title);
+
             Title = title;
             ShortDescription = shortDescription;
             Content = content;

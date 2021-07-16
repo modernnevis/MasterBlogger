@@ -23,8 +23,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
 
-      },
-      "launchUrl": "https://localhost:5001/Administrator/ArticleCategoryManagement/list"
+      }
+
     }
   }
 }
