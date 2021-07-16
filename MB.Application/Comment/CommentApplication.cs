@@ -1,4 +1,5 @@
-﻿using MB.Application.Contracts.Comment;
+﻿using System.Collections.Generic;
+using MB.Application.Contracts.Comment;
 using MB.Domain.CommentAgg;
 
 namespace MB.Application.Comment
@@ -16,6 +17,11 @@ namespace MB.Application.Comment
         {
             var comment = new Domain.CommentAgg.Comment(command.Name, command.Email, command.Message, command.ArticleId);
             _commentRepository.CreateAndSave(comment);
+        }
+
+        public List<CommentViewModel> GetList()
+        {
+            return _commentRepository.GetList();
         }
     }
 }
