@@ -1,4 +1,5 @@
 ﻿using System;
+using _01_FrameWork.Infrastructure;
 using MB.Application.Article;
 using MB.Application.ArticleCategory;
 using MB.Application.Comment;
@@ -32,6 +33,8 @@ namespace MB.Infrastructure.Core
 
             services.AddTransient<ICommentApplication, CommentApplication>();
             services.AddTransient<ICommentRepository, CommentRepository>();
+
+            services.AddTransient<IUnitOfWork, UnitOfWorkEf>();
 
             services.AddTransient<IArticleQuery, ArticleQuery>();
 

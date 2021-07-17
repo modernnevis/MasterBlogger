@@ -1,0 +1,9 @@
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\bin\Debug\netcoreapp3.1\01_FrameWork.deps.json
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\bin\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\bin\Debug\netcoreapp3.1\01_FrameWork.pdb
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.csprojAssemblyReference.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.AssemblyInfoInputs.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.AssemblyInfo.cs
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.csproj.CoreCompileInputs.cache
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\01_FrameWork\obj\Debug\netcoreapp3.1\01_FrameWork.pdb

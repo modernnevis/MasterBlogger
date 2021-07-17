@@ -15,3 +15,5 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\o
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\MB.Infrastructure.EFCore.genruntimeconfig.cache
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\MB.Application.Contracts.dll
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\MB.Application.Contracts.pdb
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\01_FrameWork.pdb

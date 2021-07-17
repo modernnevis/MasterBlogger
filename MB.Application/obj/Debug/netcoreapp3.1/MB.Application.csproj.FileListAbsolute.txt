@@ -12,3 +12,5 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\bin\Debug\n
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\obj\Debug\netcoreapp3.1\MB.Application.csproj.CopyComplete
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\obj\Debug\netcoreapp3.1\MB.Application.dll
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\obj\Debug\netcoreapp3.1\MB.Application.pdb
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\bin\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Application\bin\Debug\netcoreapp3.1\01_FrameWork.pdb

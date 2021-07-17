@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using _01_FrameWork.Infrastructure;
 using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleAgg.Services;
@@ -11,10 +12,12 @@ namespace MB.Application.Article
     {
         private readonly IArticleRepository _articleRepository;
         private readonly IArticleValidatorService _articleValidatorService;
-        public ArticleApplication(IArticleRepository articleRepository, IArticleValidatorService articleValidatorService)
+        private readonly IUnitOfWork _unitOfWork;
+        public ArticleApplication(IArticleRepository articleRepository, IArticleValidatorService articleValidatorService, IUnitOfWork unitOfWork)
         {
             this._articleRepository = articleRepository;
             _articleValidatorService = articleValidatorService;
+            _unitOfWork = unitOfWork;
         }
 
         public List<ArticleViewModel> GetList()
@@ -24,17 +27,21 @@ namespace MB.Application.Article
 
         public void Create(CreateArticle command)
         {
+            _unitOfWork.BeginTran();
             var article = new Domain.ArticleAgg.Article(command.Title, command.ShortDescription, command.Content,
                 command.Image, command.ArticleCategoryId, _articleValidatorService);
-            _articleRepository.CreateAndSave(article);
+            _articleRepository.Create(article);
+            _unitOfWork.CommitTran();
         }
 
         public void Edit(EditArticle command)
         {
+            _unitOfWork.BeginTran();
             var article = _articleRepository.Get(command.Id);
             article.Edit(command.Title, command.ShortDescription, command.Content,
                 command.Image, command.ArticleCategoryId, _articleValidatorService);
-            _articleRepository.SaveChanges();
+            _unitOfWork.CommitTran();
+            // _articleRepository.SaveChanges();
         }
 
         public EditArticle Get(long id)
@@ -53,17 +60,21 @@ namespace MB.Application.Article
 
         public void Remove(long id)
         {
+            _unitOfWork.BeginTran();
             var article = _articleRepository.Get(id);
             article.Delete();
-            _articleRepository.SaveChanges();
+            _unitOfWork.CommitTran();
+            // _articleRepository.SaveChanges();
 
         }
 
         public void Activate(long id)
         {
+            _unitOfWork.BeginTran();
             var article = _articleRepository.Get(id);
             article.Restore();
-            _articleRepository.SaveChanges();
+            _unitOfWork.CommitTran();
+            //_articleRepository.SaveChanges();
         }
     }
 }

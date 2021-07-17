@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using _01_FrameWork.Domain;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
 
 namespace MB.Domain.ArticleCategoryAgg
 {
-    public class ArticleCategory
+    public class ArticleCategory : DomainBase<long>
     {
+        // public long Id { get;private set; }
+        public string Name { get; private set; }
+        public bool IsDeleted { get; private set; }
+        // public DateTime CreationDate { get; private set; }
+        public ICollection<Article> Articles { get; private set; }
 
         public ArticleCategory(string name, IArticleCategoryValidatorService validatorService)
         {
@@ -14,7 +20,7 @@ namespace MB.Domain.ArticleCategoryAgg
             validatorService.CheckThisRecordAlreadyExist(name);
             Name = name;
             IsDeleted = false;
-            CreationDate = DateTime.Now;
+          //  CreationDate = DateTime.Now;
             Articles = new List<Article>();
         }
         protected ArticleCategory()
@@ -43,10 +49,6 @@ namespace MB.Domain.ArticleCategoryAgg
         {
             IsDeleted = false;
         }
-        public long Id { get;private set; }
-        public string Name { get; private set; }
-        public bool IsDeleted { get; private set; }
-        public DateTime CreationDate { get; private set; }
-        public ICollection<Article> Articles { get; private set; }
+       
     }
 }

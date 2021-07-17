@@ -10,3 +10,5 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcor
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\MB.Application.Contracts.dll
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\MB.Application.Contracts.pdb
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\obj\Debug\netcoreapp3.1\MB.Domain.csproj.CopyComplete
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Domain\bin\Debug\netcoreapp3.1\01_FrameWork.pdb

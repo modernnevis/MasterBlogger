@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _01_FrameWork.Infrastructure;
 using MB.Application.Contracts.Comment;
 using MB.Domain.CommentAgg;
 
@@ -7,16 +8,19 @@ namespace MB.Application.Comment
     public class CommentApplication : ICommentApplication
     {
         private readonly ICommentRepository _commentRepository;
-
-        public CommentApplication(ICommentRepository commentRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public CommentApplication(ICommentRepository commentRepository, IUnitOfWork unitOfWork)
         {
             _commentRepository = commentRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public void Add(AddComment command)
         {
+            _unitOfWork.BeginTran();
             var comment = new Domain.CommentAgg.Comment(command.Name, command.Email, command.Message, command.ArticleId);
-            _commentRepository.CreateAndSave(comment);
+            _commentRepository.Create(comment);
+            _unitOfWork.CommitTran();
         }
 
         public List<CommentViewModel> GetList()
@@ -26,16 +30,20 @@ namespace MB.Application.Comment
 
         public void Confirm(long id)
         {
+            _unitOfWork.BeginTran();
             var comment = _commentRepository.Get(id);
             comment.Confirm();
-            _commentRepository.Save();
+            _unitOfWork.CommitTran();
+            // _commentRepository.Save();
         }
 
         public void Cancel(long id)
         {
+            _unitOfWork.BeginTran();
             var comment = _commentRepository.Get(id);
             comment.Cancel();
-            _commentRepository.Save();
+            _unitOfWork.CommitTran();
+          //  _commentRepository.Save();
         }
     }
 }

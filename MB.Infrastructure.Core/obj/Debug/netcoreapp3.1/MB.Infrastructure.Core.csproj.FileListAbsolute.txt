@@ -18,3 +18,5 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\obj
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\obj\Debug\netcoreapp3.1\MB.Infrastructure.Core.pdb
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\bin\Debug\netcoreapp3.1\MB.Infrastructure.Query.dll
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\bin\Debug\netcoreapp3.1\MB.Infrastructure.Query.pdb
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\bin\Debug\netcoreapp3.1\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Infrastructure.Core\bin\Debug\netcoreapp3.1\01_FrameWork.pdb

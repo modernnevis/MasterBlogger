@@ -93,3 +93,5 @@ C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\ob
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\_ViewImports.cshtml.g.cs
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\_ViewStart.cshtml.g.cs
 C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\CommentManagement\List.cshtml.g.cs
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\HP O M E N\Documents\C#\Atriya\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net5.0\01_FrameWork.pdb
